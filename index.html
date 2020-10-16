@@ -12,14 +12,21 @@
     <header>
         <h1>Plaque d'immatriculation</h1>
     </header>
-    <section class="immatriculation">
-        <div class="fr">
-            <img class="round" src="europe.svg" alt="europeen flag" width="100%" height="50%" />
-            <p>FR</p>
-        </div>
-        <input class="immat" placeholder="AA-123-AA"></input>
-        <div class="departement"></div>
-    </section>
+    <form action="" method="get">
+        <section class="immatriculation">
+            <div class="fr">
+                <img class="round" src="eu.svg" alt="europeen flag" width="100%" height="50%" />
+                <p>FR</p>
+            </div>
+            <input 
+                name="plaque-immat" id="plaque-immatriculation" class="immat" placeholder="AA-123-AA"></input>
+            <div class="departement">59</div>
+        </section>
+        <section class="validation">
+            <button type="submit" id="plaque-immat">Chercher</button>
+        </section>
+    </form>
+    <script src="api.js"></script>
 </body>
 
 </html>
